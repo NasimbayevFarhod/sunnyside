@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template Project</title>
+  <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img class="logo__img" src="./images/sunnyside 2-logo-activ.svg" alt="">
+        </a>
+
+
+
+        <nav class="navbar__close ">
+          <div class="triangle"></div>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav-link" href="#">
+                About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav-link" href="#">
+                 Services
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav-link" href="#">
+                Projects
+              </a>
+            </li>
+            <li class="nav__item">
+              <button class="nav-link btn__stile" href="#">
+                CONTACT
+              </button>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="menu" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+          <svg width="24" height="18" viewBox="0 0 100 100">
+            <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+          </svg>
+        </button>
+
+
+      </div>
+    </div>
+  </header>
+
+
+
+  <main class="site-main">
+
+    <section class="hero">
+      <h1 class="visually-hidden">
+        helper
+      </h1>
+      <h2 class="hero__title">
+        We are creatives
+      </h2>
+    </section>
+
+    <section class="cards">
+      <div class="container">
+        <div class="cards__wrapper cards__wrapper-first">
+          <div class="cards__inner">
+            <h3 class="cards__title">
+              Transform your brand
+            </h3>
+            <p class="cards__text">
+              We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+            </p>
+            <a class="cards__link" href="#">
+              LEARN MORE
+            </a>
+          </div>
+          <div class="cards__img-box">
+          </div>
+        </div>
+        <div class="cards__wrapper ">
+          <div class="cards__img-box cards__img-box-second">
+          </div>
+          <div class="cards__inner cards__inner-second">
+            <h3 class="cards__title">
+              Stand out to the right audience
+            </h3>
+            <p class="cards__text">
+              Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+            </p>
+            <a class="cards__link cards__link-second" href="#">
+              LEARN MORE
+            </a>
+          </div>
+        </div>
+        
+        <div class="cards__wrapper">
+          <div class="cards__box">
+            <h3 class="box__title">
+              Graphic Design
+            </h3>
+            <p class="box__text">
+              Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+            </p>
+          </div>
+          <div class="cards__box">
+            <h3 class="box__title">
+              Photography
+            </h3>
+            <p class="box__text">
+              Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  </main>
+
+
+  <footer class="site-footer">
+
+  </footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
