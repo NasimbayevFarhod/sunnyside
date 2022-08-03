@@ -1,5 +1,13 @@
 /* VARIABLES */
-
+/* barlow-600 - latin */
+@font-face {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  src: local(''),
+       url('../fonts/barlow-v12-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/barlow-v12-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* fraunces-600 - latin */
 @font-face {
   font-family: 'Fraunces';
@@ -62,10 +70,8 @@ body{
   width: 100%;
   margin: 0;
   padding: 0;
-  /* font-family: "Roboto", "Arial", sans-serif; */
-  /* font-size: 16px; */
-  /* font-weight: 400; */
-  /* line-height: var(--main-line-height); */
+  font-family: 'Barlow', "Arial", sans-serif;
+  font-weight: 600;
 
 }
 
@@ -289,7 +295,6 @@ body{
 
 .hero
 {
-  background-color: #49bcf1;
   border: none;
   padding: 105px 0 536px;
   background-image: url(../images/Group\ 16-hero-bg.jpg);
@@ -508,8 +513,245 @@ body{
   .cards__box {
     min-width: 379px;
   }
+}
+
+
+
+
+.testimonials {
+  padding: 160px 0;
+}
+
+.testimonials__title {
+  font-family: 'Fraunces';
+  margin-bottom: 80px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #A7AAAD;
+}
+.testimonials__list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+
+}
+.testimonials__item {
+  position: relative;
+  max-width: 350px;
+}
+
+.testimonials__item:nth-child(2)
+{
+  margin: 0 30px;
+}
+
+.testimonials__item::before
+{
+  display: block;
+  content: "";  
+  width: 72px;
+  height: 72px;
+  margin: 0 auto 58px;
+  background-image: url(../images/Oval-emily.png);
+  background-repeat: no-repeat;
+}
+
+.testimonials__item:nth-child(2):before
+{
+  background-image: url(../images/Oval\ Copy-thomas.png);
+}
+.testimonials__item:nth-child(3):before
+{
+  background-image: url(../images/Oval\ Copy\ 2-jennie.png);
+}
+
+.testimonials__item-comment {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #5B636D;
+}
+.testimonials__item-name {
+  margin: 70px 0 10px;
+  font-family: 'Fraunces';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #24303E;
+}
+.testimonials__item-text {
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #A7AAAD;
+}
+
+
+
+
+@media only screen and (max-width:700px)
+{
+  .testimonials {
+    padding: 64px 0 86px;
+  }
+  
+  .testimonials__title {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 4px;
+    color: #A7AAAD;
+  }
+  .testimonials__list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .testimonials__item {
+    max-width: 350px;
+  }
+  
+  .testimonials__item:nth-child(2)
+  {
+    margin:64px 0 ;
+  }
 
 
 }
+
+
+
+
+.gred__wrapper
+{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns:25% 25%  25% 25% ;
+  grid-template-rows:447px;
+}
+
+.gred__box
+{
+
+  background-image: url(../images/Bitmap-milk.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.gred__box:nth-child(2)
+{
+  background-image: url(../images/Bitmap-thirt-orange.jpg);
+}
+
+.gred__box:nth-child(3)
+{
+  background-image: url(../images/Bitmap-isecream.jpg);
+}
+
+.gred__box:nth-child(4)
+{
+  background-image: url(../images/Bitmap-coubeak.jpg);
+}
+
+
+
+
+@media only screen and (max-width:900px)
+
+{
+  .gred__wrapper
+{
+  width: 375px;
+  margin: auto;
+  grid-template-columns:188px 188px   ;
+  grid-template-rows:188px  188px;
+}
+
+}
+
+
+.site-footer
+{
+  padding: 72px 0;
+  background-color: #90D4C6;
+}
+
+.footer__wrapper
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.footer__list
+{
+  margin-top: 90px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer__item:not(:last-child)
+{
+  margin-right: 28px;
+}
+
+.footer__link
+{
+  font-family: 'Barlow';
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.128571px;
+  text-decoration: none;
+  color: #2C7566;
+}
+
+.footer__link:hover
+{
+  color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
